@@ -1,0 +1,16 @@
+{"dropout": 0.6,
+  "recurrent dropout":0.6,
+  "LSTM_size":168,
+  "n_LSTM_layers": 1,
+  "lr": 0.001,
+  "LSTM_activation": "relu",
+  "DENSE_activation": "relu",
+  "n_encoder_layers":1,
+  "filter_size":5 ,
+  "kernel_size":3,
+  "n_dense_layers": 2,
+  "dense_size":512,
+  "dense2_final_size": 512,
+  "n_final_dense_layers": 3,
+  "final_dense_size": 512}
+

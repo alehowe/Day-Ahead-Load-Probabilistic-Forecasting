@@ -1,0 +1,45 @@
+{
+    "data_config": {
+        "dataset_name": "TrainingAndExam.csv",
+        "idx_start_train": {
+            "y": 2015,
+            "m": 1,
+            "d": 1
+        },
+        "idx_start_oos_preds": {
+            "y": 2018,
+            "m": 1,
+            "d": 1
+        },
+        "idx_end_oos_preds": {
+            "y": 2019,
+            "m": 12,
+            "d": 31
+        },
+        "keep_past_train_samples": true,
+        "steps_lag_win": 7,
+        "pred_horiz": 24,
+        "preprocess": "MinMaxScaler",
+        "analysis": "Glm",
+        "per_min": 1,
+        "per_max": 10000,
+        "freq": 3,
+        "pca": true,
+        "periodic": false,
+        "holiday":"Ratio",
+        "shuffle_mode": "none",
+        "num_vali_samples": 100,
+        "holiday_distance": false
+    },
+    "model_config": {
+        "PF_method": "point",
+        "model_class": "CNNMIXED",
+        "optuna_m": "grid_search",
+        "target_alpha": [
+        ],
+        "max_epochs": 160,
+        "batch_size": 32,
+        "patience": 20,
+        "num_ense": 1
+    }
+}

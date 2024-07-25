@@ -1,0 +1,45 @@
+{
+    "data_config": {
+        "dataset_name": "LF_bench_0.csv",
+        "idx_start_train": {
+            "y": 2014,
+            "m": 1,
+            "d": 2
+        },
+        "idx_start_oos_preds": {
+            "y": 2017,
+            "m": 12,
+            "d": 23
+        },
+        "idx_end_oos_preds": {
+            "y": 2017,
+            "m": 12,
+            "d": 31
+        },
+        "keep_past_train_samples": true,
+        "steps_lag_win": 7,
+        "pred_horiz": 24,
+        "preprocess": "MinMaxScaler",
+        "analysis": "Glm",
+        "per_min": 1,
+        "per_max": 10000,
+        "freq": 3,
+        "pca": false,
+        "periodic": false,
+        "holiday":"Dummy",
+        "shuffle_mode": "none",
+        "num_vali_samples": 100,
+         "holiday_distance": true
+    },
+    "model_config": {
+        "PF_method": "point",
+        "model_class": "DNN",
+        "optuna_m": "grid_search",
+        "target_alpha": [
+        ],
+        "max_epochs": 250,
+        "batch_size": 32,
+        "patience": 20,
+        "num_ense": 1
+    }
+}
