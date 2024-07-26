@@ -2,17 +2,17 @@
     "data_config": {
         "dataset_name": "TrainingAndProtoTest.csv",
         "idx_start_train": {
-            "y": 2015,
+            "y": 2014,
             "m": 1,
-            "d": 1
+            "d": 2
         },
         "idx_start_oos_preds": {
-            "y": 2018,
+            "y": 2017,
             "m": 1,
             "d": 1
         },
         "idx_end_oos_preds": {
-            "y": 2019,
+            "y": 2018,
             "m": 12,
             "d": 31
         },
