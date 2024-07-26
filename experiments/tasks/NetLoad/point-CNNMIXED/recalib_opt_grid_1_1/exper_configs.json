@@ -1,6 +1,6 @@
 {
     "data_config": {
-        "dataset_name": "TrainingAndExam.csv",
+        "dataset_name": "TrainingAndProtoTest.csv",
         "idx_start_train": {
             "y": 2015,
             "m": 1,
